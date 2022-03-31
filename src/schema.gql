@@ -1,0 +1,51 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Debate {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  users: [User!]!
+  user(id: Int!): User!
+  debates: [Debate!]!
+  debate(id: Int!): Debate!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  removeUser(id: Int!): User!
+  createDebate(createDebateInput: CreateDebateInput!): Debate!
+  updateDebate(updateDebateInput: UpdateDebateInput!): Debate!
+  removeDebate(id: Int!): Debate!
+}
+
+input CreateUserInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateUserInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateDebateInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateDebateInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
