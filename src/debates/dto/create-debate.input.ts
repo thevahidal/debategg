@@ -2,6 +2,10 @@ import { InputType, Int, Field } from '@nestjs/graphql';
 
 @InputType()
 export class CreateDebateInput {
-  @Field(() => Int, { description: 'Example field (placeholder)' })
-  exampleField: number;
+  @Field(() => String, { description: 'Debate title field' })
+  title: String;
+
+
+  @Field(() => String, { description: 'Debate description field' })
+  description: String;
 }

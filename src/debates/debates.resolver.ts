@@ -1,6 +1,8 @@
+import { Model } from 'mongoose';
 import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+
 import { DebatesService } from './debates.service';
-import { Debate } from './entities/debate.entity';
+import { Debate, DebateDocument } from './schemas/debate.schema';
 import { CreateDebateInput } from './dto/create-debate.input';
 import { UpdateDebateInput } from './dto/update-debate.input';
 
